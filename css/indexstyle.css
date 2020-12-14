@@ -3,7 +3,7 @@ body
     font-family:'Cinzel';
     background-color:#15DEA5;
 }
-/* .container-fluid */
+.container-fluid
 {
     background-color:#15DEA5;
 }
@@ -44,7 +44,7 @@ h5, p{
 }
 .card-img-top
 {
-    object-fit: cover;
+    object-fit: contain;
     max-height: 200px;
     max-width : 500px;
     border-radius: 20px;
