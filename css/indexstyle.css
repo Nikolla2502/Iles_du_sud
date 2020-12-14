@@ -31,6 +31,14 @@ p
     padding-top: 10px
     
 }
+.card-island
+{
+    height:300px;
+    width: 300px;
+    background-color:rgb(98, 82, 243);
+    border-radius: 30px;
+    margin: 10px;
+}
 .card
 {
     height:300px;
@@ -73,13 +81,13 @@ transition: transform 200ms;
     transform: scale(1.10);
     box-shadow:5px 5px 20px;
 }
-.card
+.card, .card-island
 {
     transform: scale(1);
     transition: transform 200ms;
 
 }
-.card:hover
+.card:hover, .card-island:hover
 {
     transform: scale(1.10);
     box-shadow:5px 5px 20px;
