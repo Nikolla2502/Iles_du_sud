@@ -1,105 +1,118 @@
-body
-{
-    font-family:'Cinzel';
-    background-color:#15DEA5;
+body {
+  font-family: 'Cinzel';
+  background-color: #15DEA5;
 }
-.container-fluid
-{
-    background-color:#15DEA5;
+
+.container-fluid {
+  background-color: #15DEA5;
 }
-a
-{
-    text-decoration: none;
-    color:black;
+
+a {
+  text-decoration: none;
+  color: black;
 }
+
 .jumbotron {
-    background-color:rgb(98, 82, 243);
-    
-    border-radius:25px 25px 25px 25px;
-    margin-top:20px
-}
-.navbar-brand
-{
-    background-color:rgb(98, 82, 243);
-    padding:0 20px 0 20px;
-    border-radius: 25px
-}
-p
-{
-    font-weight:400;
-    text-align:center;
-    padding-top: 10px
-    
-}
-.card-island
-{
-    height:300px;
-    width: 300px;
-    background-color:rgb(98, 82, 243);
-    border-radius: 30px;
-    margin: 10px;
-}
-.card
-{
-    height:300px;
-    width: 500px;
-    background-color:rgb(98, 82, 243);
-    border-radius: 30px;
-    margin: 10px;
-}
-h5, p{
-    color:white;
-}
-.card-img-top
-{
-    object-fit: contain;
-    max-height: 200px;
-    max-width : 500px;
-    border-radius: 20px;
+  background-color: #6252f3;
+  border-radius: 25px 25px 25px 25px;
+  margin-top: 20px;
 }
 
-.copyright img
-{
-    height: 30px;
-    width: 30px;
-    
+.navbar {
+  background-color: #8f83f7;
 }
-.copyright figcaption
-{
-    display: inline;
-   
-   font-weight: 600;
-}
-.navbar-brand
-{
-    transform: scale(1);
-transition: transform 200ms;
 
+.navbar .navbar-brand {
+  background-color: #6252f3;
+  padding: 0 20px 0 20px;
+  border-radius: 25px;
 }
-.navbar-brand:hover
-{
-    transform: scale(1.10);
-    box-shadow:5px 5px 20px;
-}
-.card, .card-island
-{
-    transform: scale(1);
-    transition: transform 200ms;
 
+p {
+  font-weight: 400;
+  text-align: center;
 }
-.card:hover, .card-island:hover
-{
-    transform: scale(1.10);
-    box-shadow:5px 5px 20px;
-}
-.nav-item
-{
-    transform: scale(1);
-    transition: transform 200ms;
 
+.card {
+  height: 250px;
+  width: 500px;
+  background-color: #6252f3;
+  border-radius: 30px;
+  margin: 10px;
 }
-.nav-item:hover
-{
-    transform: scale(1.10);
-    box-shadow:5px 5px 20px;
+
+.card.card-island {
+  height: 250px;
+  width: 300px;
 }
+
+h5, p {
+  color: white;
+}
+
+.card-img-top {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 150px;
+  max-width: 500px;
+  border-radius: 30px;
+}
+
+.copyright img {
+  height: 30px;
+  width: 30px;
+}
+
+.copyright figcaption {
+  display: inline;
+  font-weight: 600;
+}
+
+.navbar-brand {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+}
+
+.navbar-brand:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 5px 5px 20px;
+          box-shadow: 5px 5px 20px;
+}
+
+.card, .card-island {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+}
+
+.card:hover, .card-island:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 5px 5px 20px;
+          box-shadow: 5px 5px 20px;
+}
+
+.nav-item {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+}
+
+.nav-item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 5px 5px 20px;
+          box-shadow: 5px 5px 20px;
+}
+/*# sourceMappingURL=indexstyle.css.map */
