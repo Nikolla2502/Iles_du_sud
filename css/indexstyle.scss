@@ -1,11 +1,14 @@
+@import "utils/variables";
+
+
 body
 {
     font-family:'Cinzel';
-    background-color:#15DEA5;
+    background-color:$bg-color-main;
 }
 .container-fluid
 {
-    background-color:#15DEA5;
+    background-color:$bg-color-main;
 }
 a
 {
@@ -13,18 +16,25 @@ a
     color:black;
 }
 .jumbotron {
-    background-color:rgb(98, 82, 243);
+    background-color:$bg-color-item;
     border-radius:25px 25px 25px 25px;
     margin-top:20px
 }
 .navbar{
-    background-color:rgb(143, 131, 247);
-    & .navbar-brand{
-    background-color:rgb(98, 82, 243);
+    background-color:$bg-color-itemlight;
+    font-weight: bold;
+    color:black;
+    .navbar-brand{
+    background-color:$bg-color-item;
     padding:0 20px 0 20px;
-    border-radius: 25px
+    border-radius: 25px;
     }
+  
 }
+.navbar-nav{
+    border-radius:25px;
+}
+
 p
 {
     font-weight:400;
@@ -92,6 +102,7 @@ transition: transform 200ms;
 }
 .nav-item
 {
+    
     transform: scale(1);
     transition: transform 200ms;
 
@@ -100,4 +111,5 @@ transition: transform 200ms;
 {
     transform: scale(1.10);
     box-shadow:5px 5px 20px;
+    
 }
