@@ -42,9 +42,14 @@ p
    
     
 }
+.card-body{
+    display:flex;
+    align-items:center;
+}
 
 .card
 {
+    
     height:250px;
     width: 500px;
     background-color:rgb(98, 82, 243);
@@ -54,6 +59,9 @@ p
     height:250px;
     width: 300px;
     }
+.card-body{
+    display:flex;
+    justify-content:center;
 }
 h5, p{
     color:white;
@@ -112,4 +120,13 @@ transition: transform 200ms;
     transform: scale(1.10);
     box-shadow:5px 5px 20px;
     
+}
+
+@media all and (max-width: 550px)
+{
+.card
+{
+    height:200px;
+    width: 350px;
+}
 }

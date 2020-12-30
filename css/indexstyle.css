@@ -52,6 +52,15 @@ p {
   width: 300px;
 }
 
+.row .card-villa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: row;
+      -ms-flex-pack: row;
+          justify-content: row;
+}
+
 h5, p {
   color: white;
 }
@@ -120,5 +129,12 @@ h5, p {
           transform: scale(1.1);
   -webkit-box-shadow: 5px 5px 20px;
           box-shadow: 5px 5px 20px;
+}
+
+@media all and (max-width: 550px) {
+  .card {
+    height: 200px;
+    width: 350px;
+  }
 }
 /*# sourceMappingURL=indexstyle.css.map */
