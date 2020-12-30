@@ -1,0 +1,23 @@
+body
+{
+    font-family:'Cinzel';
+    background-color:$bg-color-main;
+}
+.container-fluid
+{
+    background-color:$bg-color-main;
+}
+p
+{
+    font-weight:400;
+    text-align:center;
+}
+h5, p
+{
+    color:white;
+}
+a
+{
+    text-decoration: none;
+    color:black;
+}

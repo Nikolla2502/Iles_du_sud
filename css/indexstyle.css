@@ -7,6 +7,15 @@ body {
   background-color: #15DEA5;
 }
 
+p {
+  font-weight: 400;
+  text-align: center;
+}
+
+h5, p {
+  color: white;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -34,55 +43,6 @@ a {
   border-radius: 25px;
 }
 
-p {
-  font-weight: 400;
-  text-align: center;
-}
-
-.card {
-  height: 250px;
-  width: 500px;
-  background-color: #6252f3;
-  border-radius: 30px;
-  margin: 10px;
-}
-
-.card.card-island {
-  height: 250px;
-  width: 300px;
-}
-
-.row .card-villa {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: row;
-      -ms-flex-pack: row;
-          justify-content: row;
-}
-
-h5, p {
-  color: white;
-}
-
-.card-img-top {
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-height: 150px;
-  max-width: 500px;
-  border-radius: 30px;
-}
-
-.copyright img {
-  height: 30px;
-  width: 30px;
-}
-
-.copyright figcaption {
-  display: inline;
-  font-weight: 600;
-}
-
 .navbar-brand {
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -93,22 +53,6 @@ h5, p {
 }
 
 .navbar-brand:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-box-shadow: 5px 5px 20px;
-          box-shadow: 5px 5px 20px;
-}
-
-.card, .card-island {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: -webkit-transform 200ms;
-  transition: -webkit-transform 200ms;
-  transition: transform 200ms;
-  transition: transform 200ms, -webkit-transform 200ms;
-}
-
-.card:hover, .card-island:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-box-shadow: 5px 5px 20px;
@@ -131,10 +75,74 @@ h5, p {
           box-shadow: 5px 5px 20px;
 }
 
+.footer {
+  text-align: right;
+  background-color: #8f83f7;
+}
+
+.copyright img {
+  height: 10px;
+  width: 10px;
+}
+
+.copyright figcaption {
+  display: inline;
+  font-weight: 600;
+}
+
+.container-fluid {
+  background-color: #15DEA5;
+}
+
+.card {
+  height: 250px;
+  width: 500px;
+  background-color: #6252f3;
+  border-radius: 30px;
+  margin: auto;
+}
+
+.card.card-island {
+  height: 250px;
+  width: 300px;
+}
+
+.card-body {
+  margin: auto;
+}
+
+.card-img-top {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 150px;
+  max-width: 500px;
+  border-radius: 30px;
+}
+
+.card-island {
+  margin-bottom: 20px;
+}
+
+.card, .card-island {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+}
+
+.card:hover, .card-island:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 5px 5px 20px;
+          box-shadow: 5px 5px 20px;
+}
+
 @media all and (max-width: 550px) {
   .card {
-    height: 200px;
-    width: 350px;
+    height: auto;
+    width: auto;
   }
 }
 /*# sourceMappingURL=indexstyle.css.map */
