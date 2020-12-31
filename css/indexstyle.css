@@ -123,6 +123,26 @@ a {
   margin-bottom: 20px;
 }
 
+.card-restaurant {
+  background-color: #9f95f7;
+  margin: 5px 0 5px 0;
+  color: white;
+}
+
+.card-restaurant a {
+  color: white;
+  margin-left: 5px;
+}
+
+.facebook {
+  height: 10%;
+  margin: 10px;
+}
+
+.googlemap {
+  height: 15%;
+}
+
 .card, .card-island {
   -webkit-transform: scale(1);
           transform: scale(1);

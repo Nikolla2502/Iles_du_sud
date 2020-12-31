@@ -39,7 +39,24 @@
 .card-island{
     margin-bottom:20px;
 }
+.card-restaurant{
+    background-color:$bg-color-itemhyperlight;
+    margin: 5px 0 5px 0;
+    color:$color-font-light;
+    & a
+    {
+        color:$color-font-light;
+        margin-left:5px;
+    }
 
+}
+.facebook{
+    height:10%;
+    margin:10px;
+}
+.googlemap{
+    height:15%;
+}
 
 .card, .card-island
 {
@@ -52,6 +69,7 @@
     transform: scale(1.10);
     box-shadow:5px 5px 20px;
 }
+
 
 
 @media all and (max-width: 550px)
