@@ -99,7 +99,7 @@ a {
   width: 500px;
   background-color: #6252f3;
   border-radius: 30px;
-  margin: auto;
+  margin: 5px 0 5px 0;
 }
 
 .card.card-island {
