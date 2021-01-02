@@ -22,6 +22,56 @@ a {
   color: black;
 }
 
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+td:not([align]), th:not([align]) {
+  text-align: left;
+}
+
 .jumbotron {
   background-color: #6252f3;
   border-radius: 25px 25px 25px 25px;
@@ -112,13 +162,13 @@ a {
   margin: auto;
 }
 
-.card-body .card-social {
+.card-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .card-img-top {
@@ -135,7 +185,7 @@ a {
 
 .card-restaurant {
   background-color: #9f95f7;
-  margin: 5px 0 5px 0;
+  margin: 10px 0 10px 0;
   color: white;
 }
 
@@ -144,7 +194,13 @@ a {
 }
 
 .facebook {
-  height: 30px;
+  height: 40px;
+  padding: 0 10px 0 10px;
+}
+
+.whatsapp {
+  height: 45px;
+  padding: 0 10px 0 10px;
 }
 
 .googlemap {

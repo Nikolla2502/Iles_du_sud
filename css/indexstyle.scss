@@ -1,7 +1,7 @@
 @import "utils/variables";
 
 @import "base/base";
-
+@import "base/minireset";
 @import "layouts/header";
 @import "layouts/nav";
 @import "layouts/footer";
@@ -27,12 +27,13 @@
 }
 .card-body{
     margin:auto;
-    .card-social{
-        display:flex;
-        align-items: left;
-    }
-}
 
+}
+.card-social{
+    display:flex;
+    justify-content: flex-start;
+   
+}
 .card-img-top
 {
     object-fit: cover;
@@ -45,7 +46,7 @@
 }
 .card-restaurant{
     background-color:$bg-color-itemhyperlight;
-    margin: 5px 0 5px 0;
+    margin: 10px 0 10px 0;
     color:$color-font-light;
     & a
     {
@@ -56,11 +57,15 @@
 }
 
 .facebook{
-    height:30px;
-    
+    height:40px;
+    padding: 0 10px 0 10px;
+}
+.whatsapp{
+    height:45px;
+    padding: 0 10px 0 10px;
 }
 .googlemap{
-    height:30px;;
+    height:30px;
 }
 
 .card, .card-island
