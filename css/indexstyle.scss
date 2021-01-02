@@ -24,15 +24,8 @@
     height:250px;
     width: 300px;
     }
-}
-.card-body{
-    margin:auto;
 
-}
-.card-social{
-    display:flex;
-    justify-content: flex-start;
-   
+
 }
 .card-img-top
 {
@@ -46,7 +39,7 @@
 }
 .card-restaurant{
     background-color:$bg-color-itemhyperlight;
-    margin: 10px 0 10px 0;
+    margin: 10px 0 30px 0;
     color:$color-font-light;
     & a
     {
@@ -58,11 +51,18 @@
 
 .facebook{
     height:40px;
-    padding: 0 10px 0 10px;
+    margin: 0 20px 0 10px;
+    background-color: white;
+    padding: 0 2px 0 2px;
+    border-radius:5px;
 }
 .whatsapp{
-    height:45px;
-    padding: 0 10px 0 10px;
+    height:40px;
+    padding: 0 2px 0 2px;
+    margin: 0 10px 0 10px;
+    background-color: white;
+    border-radius:5px;
+    
 }
 .googlemap{
     height:30px;
@@ -81,4 +81,23 @@
 }
 
 
+@media all and (max-device-width: 500px)
+{
+    .card
+    {
+    
+        height:250px;
+        width: 350px;
+
+        &.card-island{
+        height:250px;
+        width: 300px;
+        }
+        &.card-restaurant{
+            height: 400px;
+            width: 350px;
+        }
+    
+    }
+}
 
