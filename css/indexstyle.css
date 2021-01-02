@@ -1,6 +1,7 @@
 body {
   font-family: 'Cinzel';
   background-color: #15DEA5;
+  margin: 0;
 }
 
 .container-fluid {
@@ -111,6 +112,15 @@ a {
   margin: auto;
 }
 
+.card-body .card-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
 .card-img-top {
   -o-object-fit: cover;
      object-fit: cover;
@@ -131,16 +141,14 @@ a {
 
 .card-restaurant a {
   color: white;
-  margin-left: 5px;
 }
 
 .facebook {
-  height: 10%;
-  margin: 10px;
+  height: 30px;
 }
 
 .googlemap {
-  height: 15%;
+  height: 30px;
 }
 
 .card, .card-island {
@@ -157,12 +165,5 @@ a {
           transform: scale(1.1);
   -webkit-box-shadow: 5px 5px 20px;
           box-shadow: 5px 5px 20px;
-}
-
-@media all and (max-width: 550px) {
-  .card {
-    height: auto;
-    width: auto;
-  }
 }
 /*# sourceMappingURL=indexstyle.css.map */

@@ -27,6 +27,10 @@
 }
 .card-body{
     margin:auto;
+    .card-social{
+        display:flex;
+        align-items: left;
+    }
 }
 
 .card-img-top
@@ -46,16 +50,17 @@
     & a
     {
         color:$color-font-light;
-        margin-left:5px;
+       
     }
 
 }
+
 .facebook{
-    height:10%;
-    margin:10px;
+    height:30px;
+    
 }
 .googlemap{
-    height:15%;
+    height:30px;;
 }
 
 .card, .card-island
@@ -72,11 +77,3 @@
 
 
 
-@media all and (max-width: 550px)
-{
-.card
-{
-    height:auto;
-    width: auto;
-}
-}
