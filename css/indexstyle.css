@@ -180,24 +180,35 @@ td:not([align]), th:not([align]) {
   color: white;
 }
 
-.facebook {
-  height: 40px;
+.card-restaurant_img {
+  height: 120px;
+  width: 150px;
+  margin: 5px 0;
+}
+
+.card-restaurant_img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-social {
+  margin: 10px 5px 10px 30px;
+}
+
+.icon-social {
+  height: 35px;
   margin: 0 20px 0 10px;
   background-color: white;
   padding: 0 2px 0 2px;
   border-radius: 5px;
 }
 
-.whatsapp {
+.icon-googlemap {
   height: 40px;
-  padding: 0 2px 0 2px;
-  margin: 0 10px 0 10px;
   background-color: white;
-  border-radius: 5px;
-}
-
-.googlemap {
-  height: 30px;
+  padding: 0 2px 0 2px;
 }
 
 .card, .card-island {
