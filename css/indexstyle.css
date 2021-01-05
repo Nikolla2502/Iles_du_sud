@@ -216,7 +216,7 @@ td:not([align]), th:not([align]) {
           box-shadow: 5px 5px 20px;
 }
 
-@media all and (max-device-width: 500px) {
+@media only screen and (max-width: 768px) {
   .card {
     height: 250px;
     width: 350px;
@@ -228,6 +228,19 @@ td:not([align]), th:not([align]) {
   .card.card-restaurant {
     height: 400px;
     width: 350px;
+  }
+  .card, .card-island {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .card:hover, .card-island:hover, .card-restaurant:hover {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-box-shadow: 5px 5px 20px;
+            box-shadow: 5px 5px 20px;
+    background-color: #7466f3;
   }
 }
 /*# sourceMappingURL=indexstyle.css.map */

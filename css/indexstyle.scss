@@ -5,6 +5,7 @@
 @import "layouts/header";
 @import "layouts/nav";
 @import "layouts/footer";
+@import "layouts/mediaquerys";
 
 .container-fluid
 {
@@ -78,11 +79,12 @@
 {
     transform: scale(1.10);
     box-shadow:5px 5px 20px;
+
 }
 
 
-@media all and (max-device-width: 500px)
-{
+@media only screen and (max-width: #{$medium}) {
+
     .card
     {
     
@@ -96,8 +98,21 @@
         &.card-restaurant{
             height: 400px;
             width: 350px;
+
         }
     
     }
+    .card, .card-island
+{
+    transform: none;
+    transition: none;
+
+}
+.card:hover, .card-island:hover, .card-restaurant:hover
+{
+    transform: none;
+    box-shadow:5px 5px 20px;
+    background-color: darken($bg-color-itemhyperlight,10);
+}
 }
 
