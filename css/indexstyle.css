@@ -22,6 +22,11 @@ a {
   color: black;
 }
 
+li {
+  display: inline;
+  text-decoration: none;
+}
+
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -129,6 +134,7 @@ td:not([align]), th:not([align]) {
 .footer {
   text-align: right;
   background-color: #8f83f7;
+  height: 8%;
 }
 
 .copyright img {
@@ -145,7 +151,16 @@ td:not([align]), th:not([align]) {
   background-color: #15DEA5;
 }
 
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .card {
+  margin: 10px auto;
   height: 250px;
   width: 500px;
   background-color: #6252f3;
@@ -184,17 +199,24 @@ td:not([align]), th:not([align]) {
   height: 120px;
   width: 150px;
   margin: 5px 0;
+  vertical-align: center;
 }
 
 .card-restaurant_img img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .card-social {
   margin: 10px 5px 10px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 .icon-social {
@@ -209,6 +231,15 @@ td:not([align]), th:not([align]) {
   height: 40px;
   background-color: white;
   padding: 0 2px 0 2px;
+}
+
+.phone-restaurant {
+  text-align: center;
+  padding: 10px 40px 0 0;
+}
+
+.phone-restaurant a {
+  padding-left: 5px;
 }
 
 .card, .card-island {
@@ -231,6 +262,7 @@ td:not([align]), th:not([align]) {
   .card {
     height: 250px;
     width: 350px;
+    margin: 10px auto;
   }
   .card.card-island {
     height: 250px;
@@ -252,6 +284,23 @@ td:not([align]), th:not([align]) {
     -webkit-box-shadow: 5px 5px 20px;
             box-shadow: 5px 5px 20px;
     background-color: #7466f3;
+  }
+  .card-social {
+    margin: 10px 5px 10px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .phone-restaurant {
+    text-align: center;
+    padding: 10px 40px 0 0;
+  }
+  .phone-restaurant a {
+    padding-left: 5px;
   }
 }
 /*# sourceMappingURL=indexstyle.css.map */
