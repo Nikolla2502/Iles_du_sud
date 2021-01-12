@@ -1,3 +1,8 @@
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Cinzel';
   background-color: #15DEA5;
@@ -87,15 +92,12 @@ td:not([align]), th:not([align]) {
   background-color: #8f83f7;
   font-weight: bold;
   color: black;
+  text-align: center;
 }
 
 .navbar .navbar-brand {
   background-color: #6252f3;
   padding: 0 20px 0 20px;
-  border-radius: 25px;
-}
-
-.navbar-nav {
   border-radius: 25px;
 }
 
@@ -132,9 +134,10 @@ td:not([align]), th:not([align]) {
 }
 
 .footer {
-  text-align: right;
+  text-align: left;
   background-color: #8f83f7;
   height: 8%;
+  font-weight: 600;
 }
 
 .copyright img {
@@ -157,15 +160,15 @@ td:not([align]), th:not([align]) {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  vertical-align: center;
 }
 
 .card {
   margin: 10px auto;
-  height: 250px;
+  height: 400px;
   width: 500px;
   background-color: #6252f3;
   border-radius: 30px;
-  margin: 5px 0 5px 0;
 }
 
 .card.card-island {
@@ -187,7 +190,7 @@ td:not([align]), th:not([align]) {
 
 .card-restaurant {
   background-color: #9f95f7;
-  margin: 10px 0 30px 0;
+  margin: 10px auto;
   color: white;
 }
 
@@ -196,27 +199,30 @@ td:not([align]), th:not([align]) {
 }
 
 .card-restaurant_img {
-  height: 120px;
-  width: 150px;
-  margin: 5px 0;
-  vertical-align: center;
+  height: 220px;
+  width: 350px;
+  margin: 0 auto;
 }
 
 .card-restaurant_img img {
   height: 100%;
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card-social {
-  margin: 10px 5px 10px 30px;
+  margin: 10px 5px 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+}
+
+.card-socialtitle {
+  border-radius: 20px;
 }
 
 .icon-social {
@@ -235,7 +241,7 @@ td:not([align]), th:not([align]) {
 
 .phone-restaurant {
   text-align: center;
-  padding: 10px 40px 0 0;
+  padding: 10px 0 10px 0;
 }
 
 .phone-restaurant a {

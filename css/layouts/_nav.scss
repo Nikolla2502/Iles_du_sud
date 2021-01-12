@@ -2,6 +2,7 @@
     background-color:$bg-color-itemlight;
     font-weight: bold;
     color:black;
+    text-align:center;
     .navbar-brand{
     background-color:$bg-color-item;
     padding:0 20px 0 20px;
@@ -9,9 +10,10 @@
     }
   
 }
-.navbar-nav{
-    border-radius:25px;
-}
+
+
+
+// Transformation 
 .navbar-brand
 {
     transform: scale(1);

@@ -14,16 +14,17 @@
 .container{
     display: flex;
     justify-content: space-around;
+    vertical-align: center;
 }
 
 .card
 {
     margin: 10px auto;
-    height:250px;
+    height:400px;
     width: 500px;
     background-color:rgb(98, 82, 243);
     border-radius: 30px;
-    margin: 5px 0 5px 0;
+    
     &.card-island{
     height:250px;
     width: 300px;
@@ -43,7 +44,7 @@
 }
 .card-restaurant{
     background-color:$bg-color-itemhyperlight;
-    margin: 10px 0 30px 0;
+    margin: 10px auto;
     color:$color-font-light;
     & a
     {
@@ -53,23 +54,27 @@
 
 }
 .card-restaurant_img{
-    height:120px;
-    width:150px;
-    margin:5px 0;
-    vertical-align:center;
+    
+    height:220px;
+    width:350px;
+    margin:0 auto;
+    
 
     img{
     height:100%;
     width:100%;
-    object-fit: contain;
+    object-fit: cover;
     
     }
 }
 
 .card-social{
-    margin:10px 5px 10px 30px;
+    margin:10px 5px 0 30px;
     display:flex;
     justify-content: left;
+    &title{
+        border-radius:20px;
+    }
 } 
 
 
@@ -88,12 +93,13 @@
 }
 .phone-restaurant{
     text-align:center;
-    padding: 10px 40px 0 0;
+    padding: 10px 0 10px 0;;
     a{
         padding-left:5px;
     }
     
 }
+
 
 .card, .card-island
 {
@@ -124,8 +130,8 @@
         width: 300px;
         }
         &.card-restaurant{
-            height: 400px;
-            width: 350px;
+        height: 400px;
+        width: 350px;
 
         }
     
