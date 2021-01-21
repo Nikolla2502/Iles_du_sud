@@ -1,3 +1,39 @@
+@-webkit-keyframes heartbeat {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -231,6 +267,18 @@ td:not([align]), th:not([align]) {
   background-color: white;
   padding: 0 2px 0 2px;
   border-radius: 5px;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite;
+          animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+.icon-social_2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.icon-social_3 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 .icon-googlemap {
