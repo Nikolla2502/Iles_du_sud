@@ -6,13 +6,10 @@ html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, tex
 body
 {
     font-family:'Cinzel';
-    background-color:$bg-color-main;
+    background-color:$bg-color-itemlight;
     margin:0;
 }
-.container-fluid
-{
-    background-color:$bg-color-main;
-}
+
 p
 {
     font-weight:400;
