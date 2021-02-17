@@ -46,6 +46,8 @@
 }
 .card-restaurant{
     background-color:$bg-color-itemhyperlight;
+    position:relative;
+    top:200px;
     margin: 10px auto;
     color:$color-font-light;
     & a

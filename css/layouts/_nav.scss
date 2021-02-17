@@ -1,9 +1,24 @@
+
 .navbar{
     background-color:$bg-color-itemlight;
     font-weight: bold;
     border:2px solid $bg-color-item;
     border-radius:25px;
     text-align:center;
+    position:fixed;
+    top:10px;
+    z-index:1;
+  
+}
+.navbar2{
+    background-color:$bg-color-itemlight;
+    font-weight: bold;
+    border:2px solid $bg-color-item;
+    border-radius:25px;
+    text-align:center;
+    position:fixed;
+    top:80px;
+    z-index:1;
     
   
 }
@@ -17,7 +32,13 @@
     color:white;
  
 }
-
+.nav-item{
+    margin:0 20px 0 20px;
+    
+}
+.dropdown-menu{
+    background-color:$bg-color-item;
+}
 
 // Transformation 
 .navbar-brand

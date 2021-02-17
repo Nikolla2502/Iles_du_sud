@@ -126,6 +126,20 @@ td:not([align]), th:not([align]) {
   border: 2px solid #6252f3;
   border-radius: 25px;
   text-align: center;
+  position: fixed;
+  top: 10px;
+  z-index: 1;
+}
+
+.navbar2 {
+  background-color: #8f83f7;
+  font-weight: bold;
+  border: 2px solid #6252f3;
+  border-radius: 25px;
+  text-align: center;
+  position: fixed;
+  top: 80px;
+  z-index: 1;
 }
 
 .navbar-brand {
@@ -137,6 +151,14 @@ td:not([align]), th:not([align]) {
 .navbar-second {
   margin-top: 5px;
   color: white;
+}
+
+.nav-item {
+  margin: 0 20px 0 20px;
+}
+
+.dropdown-menu {
+  background-color: #6252f3;
 }
 
 .navbar-brand {
@@ -228,6 +250,8 @@ td:not([align]), th:not([align]) {
 
 .card-restaurant {
   background-color: #9f95f7;
+  position: relative;
+  top: 200px;
   margin: 10px auto;
   color: white;
 }
