@@ -123,29 +123,39 @@ td:not([align]), th:not([align]) {
 .navbar {
   background-color: #8f83f7;
   font-weight: bold;
-  border: 2px solid #6252f3;
-  border-radius: 25px;
+  border: 5px solid #6252f3;
   text-align: center;
   position: fixed;
-  top: 10px;
   z-index: 1;
 }
 
 .navbar2 {
   background-color: #8f83f7;
   font-weight: bold;
-  border: 2px solid #6252f3;
-  border-radius: 25px;
+  border: 5px solid #6252f3;
+  border-top: 10px solid #6252f3;
+  border-radius: 0 0 30px 30px;
   text-align: center;
   position: fixed;
-  top: 80px;
+  top: 60px;
   z-index: 1;
+}
+
+.navbar2 .navbar-brand {
+  padding: 0 20px 0 20px;
+  border-radius: 0 0 10px 10px;
+  position: relative;
+  top: -5px;
+}
+
+.navbar2 .navbar-nav {
+  margin: auto;
 }
 
 .navbar-brand {
   background-color: #6252f3;
   padding: 0 20px 0 20px;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 .navbar-second {
@@ -196,13 +206,13 @@ td:not([align]), th:not([align]) {
 .footer {
   text-align: left;
   background-color: #8f83f7;
-  height: 8%;
+  height: 80px;
   font-weight: 600;
 }
 
 .copyright img {
   height: 10px;
-  width: 10px;
+  width: 20px;
 }
 
 .copyright figcaption {

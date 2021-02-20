@@ -2,36 +2,46 @@
 .navbar{
     background-color:$bg-color-itemlight;
     font-weight: bold;
-    border:2px solid $bg-color-item;
-    border-radius:25px;
+    border:5px solid $bg-color-item;
+    
     text-align:center;
     position:fixed;
-    top:10px;
+    
     z-index:1;
   
 }
 .navbar2{
     background-color:$bg-color-itemlight;
     font-weight: bold;
-    border:2px solid $bg-color-item;
-    border-radius:25px;
+    border:5px solid $bg-color-item;
+    border-top:10px solid $bg-color-item;
+    border-radius: 0 0 30px 30px;
     text-align:center;
     position:fixed;
-    top:80px;
+    top:60px;
     z-index:1;
-    
+    .navbar-brand{
+        padding:0 20px 0 20px;
+        border-radius: 0 0 10px 10px;
+        position:relative;
+        top:-5px;
+        }
+    .navbar-nav{
+    margin:auto;
+}
   
 }
 .navbar-brand{
     background-color:$bg-color-item;
     padding:0 20px 0 20px;
-    border-radius: 25px;
+    border-radius: 10px;
     }
 .navbar-second{
     margin-top:5px;
     color:white;
  
 }
+
 .nav-item{
     margin:0 20px 0 20px;
     
