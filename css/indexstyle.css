@@ -130,11 +130,14 @@ td:not([align]), th:not([align]) {
 }
 
 .navbar2 {
+  height: 100px;
   background-color: #8f83f7;
+  -webkit-box-shadow: 0 20px 30px #8f83f7;
+          box-shadow: 0 20px 30px #8f83f7;
   font-weight: bold;
   border: 5px solid #6252f3;
-  border-top: 10px solid #6252f3;
-  border-radius: 0 0 30px 30px;
+  border-top: 0px;
+  border-radius: 0 0 20px 20px;
   text-align: center;
   position: fixed;
   top: 60px;
@@ -145,7 +148,6 @@ td:not([align]), th:not([align]) {
   padding: 0 20px 0 20px;
   border-radius: 0 0 10px 10px;
   position: relative;
-  top: -5px;
 }
 
 .navbar2 .navbar-nav {
@@ -206,7 +208,7 @@ td:not([align]), th:not([align]) {
 .footer {
   text-align: left;
   background-color: #8f83f7;
-  height: 80px;
+  height: 50px;
   font-weight: 600;
 }
 
@@ -220,49 +222,80 @@ td:not([align]), th:not([align]) {
   font-weight: 600;
 }
 
-.container-fluid {
-  background-color: #15DEA5;
+@media only screen and (max-width: 768px) {
+  .card {
+    height: 250px;
+    width: 350px;
+    margin: 10px auto;
+  }
+  .card.card-island {
+    height: 250px;
+    width: 300px;
+  }
+  .card.card-restaurant {
+    height: 400px;
+    width: 350px;
+  }
+  .card, .card-island {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .card:hover, .card-island:hover, .card-restaurant:hover {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-box-shadow: 5px 5px 20px;
+            box-shadow: 5px 5px 20px;
+    background-color: #7466f3;
+  }
+  .card-social {
+    margin: 10px 5px 10px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .phone-restaurant {
+    text-align: center;
+    padding: 10px 40px 0 0;
+  }
+  .phone-restaurant a {
+    padding-left: 5px;
+  }
 }
 
-.container {
+.restaurant {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  vertical-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.card {
-  margin: 10px auto;
-  height: 400px;
-  width: 500px;
-  background-color: #6252f3;
-  border-radius: 30px;
+.place {
+  background-color: black;
+  color: white;
 }
 
-.card.card-island {
-  height: 250px;
-  width: 300px;
-}
-
-.card-img-top {
-  -o-object-fit: cover;
-     object-fit: cover;
-  max-height: 150px;
-  max-width: 500px;
-  border-radius: 30px;
-}
-
-.card-island {
-  margin-bottom: 20px;
+.restaurant_place {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .card-restaurant {
   background-color: #9f95f7;
   position: relative;
   top: 200px;
-  margin: 10px auto;
+  margin: 40px auto;
   color: white;
 }
 
@@ -332,6 +365,44 @@ td:not([align]), th:not([align]) {
   padding-left: 5px;
 }
 
+.container-fluid {
+  background-color: #15DEA5;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  vertical-align: center;
+}
+
+.card {
+  margin: 10px auto;
+  height: 400px;
+  width: 500px;
+  background-color: #6252f3;
+  border-radius: 30px;
+}
+
+.card.card-island {
+  height: 250px;
+  width: 300px;
+}
+
+.card-img-top {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 150px;
+  max-width: 500px;
+  border-radius: 30px;
+}
+
+.card-island {
+  margin-bottom: 20px;
+}
+
 .card, .card-island {
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -346,51 +417,5 @@ td:not([align]), th:not([align]) {
           transform: scale(1.1);
   -webkit-box-shadow: 5px 5px 20px;
           box-shadow: 5px 5px 20px;
-}
-
-@media only screen and (max-width: 768px) {
-  .card {
-    height: 250px;
-    width: 350px;
-    margin: 10px auto;
-  }
-  .card.card-island {
-    height: 250px;
-    width: 300px;
-  }
-  .card.card-restaurant {
-    height: 400px;
-    width: 350px;
-  }
-  .card, .card-island {
-    -webkit-transform: none;
-            transform: none;
-    -webkit-transition: none;
-    transition: none;
-  }
-  .card:hover, .card-island:hover, .card-restaurant:hover {
-    -webkit-transform: none;
-            transform: none;
-    -webkit-box-shadow: 5px 5px 20px;
-            box-shadow: 5px 5px 20px;
-    background-color: #7466f3;
-  }
-  .card-social {
-    margin: 10px 5px 10px 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .phone-restaurant {
-    text-align: center;
-    padding: 10px 40px 0 0;
-  }
-  .phone-restaurant a {
-    padding-left: 5px;
-  }
 }
 /*# sourceMappingURL=indexstyle.css.map */

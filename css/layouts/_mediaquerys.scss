@@ -1,1 +1,53 @@
 $medium:768px;
+
+
+@media only screen and (max-width: #{$medium}) {
+
+    .card
+    {
+    
+        height:250px;
+        width: 350px;
+        margin: 10px auto;
+        
+
+        &.card-island{
+        height:250px;
+        width: 300px;
+        }
+        &.card-restaurant{
+        height: 400px;
+        width: 350px;
+
+        }
+    
+    }
+    .card, .card-island
+{
+    transform: none;
+    transition: none;
+
+}
+.card:hover, .card-island:hover, .card-restaurant:hover
+{
+    transform: none;
+    box-shadow:5px 5px 20px;
+    background-color: darken($bg-color-itemhyperlight,10);
+}
+
+
+.card-social{
+    margin:10px 5px 10px 30px;
+    display:flex;
+    flex-direction: column;
+
+} 
+.phone-restaurant{
+    text-align:center;
+    padding: 10px 40px 0 0;
+    a{
+        padding-left:5px;
+    }
+    
+}
+}
